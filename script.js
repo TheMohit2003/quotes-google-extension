@@ -20,7 +20,7 @@ function displayQuote(quote) {
 
   // Set the innerHTML of the elements to display the quote and author
   quoteElement.innerHTML = quote.text;
-  authorElement.innerHTML = quote.author || 'Unknown'; // Use "Unknown" if author is missing
+  authorElement.innerHTML = `-${quote.author}` || 'Unknown'; // Use "Unknown" if author is missing
 }
 
 // Call the fetchQuote function and display the quote on the web page
